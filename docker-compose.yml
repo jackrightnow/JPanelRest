@@ -2,6 +2,7 @@ version: '3'
 
 services:
   db:
+    container_name: docker-lamp_db_1
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: my_secret_pw_shh
@@ -24,5 +25,3 @@ services:
       - "8100:80"
     stdin_open: true
     tty: true
-    
- 
